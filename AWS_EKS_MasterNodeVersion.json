@@ -1,0 +1,22 @@
+{
+	"Resources": {
+		"myCluster": {
+			"Type": "AWS::EKS::Cluster",
+			"Properties": {
+				"Name": "prod",
+				"Version": "1.9",
+				"RoleArn": "arn:aws:iam::349006084872:role/EKS",
+				"ResourcesVpcConfig": {
+					"SecurityGroupIds": [
+						"sg-03f052e76fe12172f"
+					],
+					"SubnetIds": [
+						"subnet-01830f639234d0268",
+						"subnet-06ec95418ade77d31"
+
+					]
+				}
+			}
+		}
+	}
+}

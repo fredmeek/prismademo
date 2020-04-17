@@ -1,0 +1,27 @@
+{
+  "Resources": {
+    "myVPC": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "EnableDnsSupport": "false",
+        "EnableDnsHostnames": "false",
+        "InstanceTenancy": "dedicated",
+        "Tags": [{
+          "Key": "foo",
+          "Value": "bar"
+        }]
+      }
+    },
+    "MyFlowLog": {
+      "Type": "AWS::EC2::FlowLog",
+      "Properties": {
+      "LogDestination" : "arn:aws:s3:::sucharita1",
+      "LogDestinationType" : "s3",
+        "ResourceId": "subnet-ffacc698",
+        "ResourceType": "Subnet",
+        "TrafficType": "ALL"
+      }
+    }
+  }
+}

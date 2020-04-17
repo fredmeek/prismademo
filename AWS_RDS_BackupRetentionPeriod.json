@@ -1,0 +1,16 @@
+{
+	"Resources": {
+		"RDSCluster": {
+			"Type": "AWS::RDS::DBCluster",
+			"Properties": {
+				"MasterUsername": "MasterUser",
+				"MasterUserPassword": "Password.1",
+				"Engine": "aurora",
+				"DBSubnetGroupName": "default",
+
+				"DBClusterParameterGroupName": "mycluster"
+
+			}
+		}
+	}
+}

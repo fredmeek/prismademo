@@ -1,0 +1,11 @@
+{
+  "Resources": {
+    "myaccesskey": {
+      "Type": "AWS::IAM::AccessKey",
+      "Properties": {
+        "UserName": "suchiIAM-myuser-1C3BUPMF4FOW3",
+        "Serial": 1
+      }
+    }
+  }
+}

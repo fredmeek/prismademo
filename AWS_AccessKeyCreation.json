@@ -1,0 +1,10 @@
+{
+  "Resources": {
+    "myaccesskey": {
+      "Type": "AWS::IAM::AccessKey",
+      "Properties": {
+        "UserName" : { "Ref" : "myuser" }
+      }
+    }
+  }
+}

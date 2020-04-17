@@ -1,0 +1,16 @@
+{
+	"Resources": {
+		"cluster": {
+			"Type": "AWS::Redshift::ClusterParameterGroup",
+			"Properties": {
+				"Description": "String",
+				"ParameterGroupFamily": "String",
+				"Parameters": [{
+					"ParameterName": "require_ssl",
+					"ParameterValue": "false"
+				}],
+				"Tags": ["Resource Tag", "..."]
+			}
+		}
+	}
+}

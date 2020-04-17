@@ -1,0 +1,19 @@
+{
+	"Resources": {
+		"MyDB": {
+			"Type": "AWS::RDS::DBInstance",
+			"Properties": {
+				"CopyTagsToSnapshot": false,
+				"AllocatedStorage": "100",
+				"DBInstanceClass": "db.m4.16xlarge",
+				"Engine": "MySQL",
+				"EngineVersion": "8.0",
+				"Iops": "1000",
+				"MasterUsername": "DBUser",
+				"MasterUserPassword": "DBPassword.1"
+
+			}
+		}
+	}
+
+}
